@@ -1,6 +1,22 @@
+
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Droid Serif', serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Ropa Sans', sans-serif;
+https://www.google.com/fonts#UsePlace:use/Collection:Montserrat|Ubuntu|Droid+Serif|Poiret+One|Lobster|Josefin+Sans|Questrial|Covered+By+Your+Grace|Abril+Fatface|Josefin+Slab|Ropa+Sans
+
 /* Global rules */
 body {
-	font-family: 'source-sans-pro', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 img {
@@ -10,6 +26,8 @@ img {
 a {
 	color: inherit;
 	text-decoration: inherit;
+	letter-spacing: 2px;
+
 	
 }
 
@@ -30,6 +48,7 @@ img.logo {
 }
 
 .navbar {
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -62,7 +81,9 @@ h1 {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color: #e9009d;
-	font-family: 'sorts-mill-goudy', serif;
+    font-family:'Josefin Slab', serif;
+
+/*	font-family: 'sorts-mill-goudy', serif; */
 	font-size: 40px;
 	text-align: center;
 }
@@ -73,11 +94,12 @@ h1:after {
 	height: 2px;
 	background: #0b0b0b;
 	top: 90%;
-	right: 75%;
+	right: 40%;
 	width: 50%;
 }
 
 h2 {
+	font-family:'Josefin Slab', serif;
 	margin: 20px auto;
 	margin-bottom: 20px;
     color: #e9009d;
@@ -88,6 +110,7 @@ h3 {
 	margin: 20px auto;
 	font-size: 14px;
 	text-transform: uppercase;
+	letter-spacing: 2px;
 	text-align: center;
 }
 
@@ -131,8 +154,9 @@ article h2 {
 	margin-bottom: 20px;
     color: #e9009d;
     text-align: center;
-    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
-	}
+    font-family:'Josefin Slab', serif;
+   /* font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	*/}
 
 article > img {
 	display: block;
@@ -204,8 +228,10 @@ padding-left: 100px;
 }
 
 .about h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	/* font-family: 'Josefin Slab', serif;
 	font-family: 'source-sans-pro', sans-serif;
-	font-size: 20px;
+	*/font-size: 20px;
 	margin: 0 0 20px 0;
 }
 
@@ -230,8 +256,10 @@ footer a:hover {
 }
 
 footer h4 {
+		font-family: 'Josefin Slab', serif;
+/*	font-family: 'Josefin Sans', sans-serif;
 	font-family: 'sorts-mill-goudy', serif;
-	color: #fff;
+*/	color: #fff;
 	margin: 0 0 20px 0;
 	font-weight: normal;
 }
@@ -401,7 +429,6 @@ footer hr {
 	}
 
 
-
 	.hero {
 		position: relative;
 		height: 475px;
@@ -434,7 +461,12 @@ footer hr {
 	}
 
 }
+.span3 {
 
+	padding: 2px;
+	display: inline-block;
+	text-align: center;
+}
 
 
 /* Small/medium breakpoints only */

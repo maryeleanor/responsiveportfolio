@@ -1404,4 +1404,4 @@
     return this;
   };
 
-})( window, jQuery );
+})( window, $ );

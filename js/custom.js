@@ -48,3 +48,12 @@ $(window).load(function(){
          return false;
     }); 
 });
+
+
+// update columnWidth on window resize
+$(window).smartresize(function(){
+  $container.isotope({
+    // update columnWidth to a percentage of container width
+    masonry: { columnWidth: $container.width() }
+  });
+});
