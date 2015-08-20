@@ -1,120 +1,180 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		
-	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-	<script src="js/jquery.isotope.js" type="text/javascript"></script> 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+  <title>Mary Eleanor | Photography</title>
 
-	<script src="//use.typekit.net/jla8njt.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+  <script src="js/jquery.isotope.js" type="text/javascript"></script> 
 
-		<link href="css/bootstrap.min.css" rel="stylesheet" />
-		<link href="css/maryeleanor.css" rel="stylesheet" />
-		<link rel="shortcut icon" href="../favicon.ico">'
+<!-- Custom CSS -->
+<link href="css/maryeleanor.css" rel="stylesheet">
+<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
-
-	<title>Mary Eleanor | Photography</title>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 </head>
-
-
 <body>
-	<nav class="navbar">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="active" href="index.html"><img src="img/mary-logo.png" alt="Mary Eleanor, Photography and Design" class="logo"></a>
+  
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="active" href="index.html"><img src="img/mary-logo.png" alt="Mary Eleanor, Photography and Design" class="logo"></a>
+        
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/design.html">Design</a></li>
+          <li><a href="/photo.html">Photography</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-				  <li><a href="/design"> Design</a></li>
-				  <li><a class="active" href="/photo">Photography</a></li>
-				  <li><a href="/about">About</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+
 
 <main id="home">
 
-
-<div class="container-fluid">
-	 	 <div class="row">
-				<h1 >Mary Eleanor | Photography</h1>
-			</div>
-  		<div class="portfolioFilter row col-md-6 col-md-offset-3">
-  		<table text-align="center" class="table">
-			<tbody>
-   			   <tr>
-   			     <td> <a href="#" data-filter="*" class="current">All</a> </td>
-    			 <td> <a href="#" data-filter=".Landscapes">Landscapes</a> </td>
-      		 	 <td> <a href="#" data-filter=".people">People</a> </td>
-        		<td> <a href="#" data-filter=".Travel">Travel</a> </td>
-      		   </tr>
-    		</tbody>
- 		 </table>
- 		</div>
-		
-	</div>
-
-
-
-<div class="photoContainer photos">
-
-    <div class="Landscapes image-responsive span3 ">
-        <img  src="https://marycasserly.files.wordpress.com/2015/03/dscn4827-11.jpg"  /> 
-
+       
+    <div class="container-fluid row ">
+            <h1><strong> <em> Photography </strong> </em></h1>
     </div>
- 
-    <div class="image-responsive span3 Landscapes">
-        <img  src="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg"/> 
 
-    </div>    
- 
-    <div class="image-responsive span3 Landscapes">
-        <img  src="https://marycasserly.files.wordpress.com/2015/03/beach-ride-120.jpg" /> 
 
+  <!-- Gallery Menu Section -->
+  <section id="gallery" class="bg-light-gray">
+    <div class="container-fluid photomenu-fixed">       
+        <ul class="portfolio-filter list-inline">
+         <li><a class="btn active" href="#" data-filter="*"> All Photos</a></li>
+         <li><a class="btn" href="#" data-filter=".land">Landscapes</a> </li>
+         <li><a class="btn" href="#" data-filter=".portrait">Portraits</a> </li>
+         <li><a class="btn" href="#" data-filter=".travel">Travel</a> </li>
+        </ul>     
     </div>
-     
-    <div class="people places Landscapes image-responsive span3 ">
-         <img  src="https://marycasserly.files.wordpress.com/2015/03/dscn4827-11.jpg"  /> 
 
+    <div class="portfolioContainer">
+        <!-- Gallery  -->
+
+        <div class="land span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/img_2771.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/img_2771.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/julia-3672v21.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/julia-3672v21.jpg" alt=""></a> </div>
+
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/mg_9610.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/mg_9610.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/2015bajamex-4215.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/2015bajamex-4215.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/2015bajamex-43051.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/2015bajamex-43051.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/2015bajamex-5254.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/2015bajamex-5254.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/2015bajamex-5257.jpg" data-gallery > <img src="https://marycasserly.files.wordpress.com/2015/03/2015bajamex-5257.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/2015bajamex-5246.jpg" data-gallery> <img src="https://marycasserly.files.wordpress.com/2015/03/2015bajamex-5246.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/roxanna015.jpg" data-gallery > <img src="https://marycasserly.files.wordpress.com/2015/03/roxanna015.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/roxanna013-e1428964742904.jpg" data-gallery > <img src="https://marycasserly.files.wordpress.com/2015/03/roxanna013-e1428964742904.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/owen004_3.jpg" data-gallery > <img src="https://marycasserly.files.wordpress.com/2015/03/owen004_3.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/032611_1402_copy.jpg" data-gallery> <img src="https://marycasserly.files.wordpress.com/2015/03/032611_1402_copy.jpg" alt=""></a> </div>
+
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/elisa-082.jpg" data-gallery > <img src="https://marycasserly.files.wordpress.com/2015/03/elisa-082.jpg" alt=""></a> </div> 
+        
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/elisa-058.jpg" data-gallery> <img src="https://marycasserly.files.wordpress.com/2015/03/elisa-058.jpg" alt=""></a> </div>
+        <div class="portrait span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/elisa-034.jpg" data-gallery > <img src="https://marycasserly.files.wordpress.com/2015/03/elisa-034.jpg" alt=""></a> </div>
+
+<!-- 
+  <a href="" border="0"> </a>
+    <a href="" border="0"> </a>
+  <a href="" border="0"> </a>
+    <a href="" border="0"> </a>
+    <a href="" border="0"> </a>
+    <a href="https://marycasserly.files.wordpress.com/2015/03/img_4400.jpg" border="0"> </a>
+  <a href="https://marycasserly.files.wordpress.com/2015/03/julia-36481.jpg" border="0"> </a>
+  <a href="https://marycasserly.files.wordpress.com/2015/03/selina-71.jpg" border="0"> </a>
+    <a href="https://marycasserly.files.wordpress.com/2015/03/mg_9653.jpg" border="0"> </a>
+  <a href="https://marycasserly.files.wordpress.com/2015/03/mg_9612.jpg" border="0"> </a>
+-->
+
+         <div class="travel span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/daniella1-e1429223750415.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/daniella1-e1429223750415.jpg"></a> </div>
+
+          <div class="land span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/selina-31.jpg" data-gallery > <img src="https://marycasserly.files.wordpress.com/2015/03/selina-31.jpg" alt=""></a> </div>
+
+          <div class="travel span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/img_2381-e1428965062289.jpg" data-gallery > <img src="https://marycasserly.files.wordpress.com/2015/03/img_2381-e1428965062289.jpg" alt=""></a> </div>
+
+          <div class="travel span3"> <a href="http://c1.staticflickr.com/1/523/18316947963_e289619dda.jpg" data-gallery > <img src="http://c1.staticflickr.com/1/523/18316947963_e289619dda.jpg" alt=""></a> </div>
+
+          <div class="portraits span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/img_2353.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/img_2353.jpg" alt=""></a> </div>
+
+          <div class="travel span3"> <a href="https://marycasserly.files.wordpress.com/2015/03/img_2456-e1428965266632.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/img_2456-e1428965266632.jpg" alt=""></a> </div>
+
+        <div class="travel span3"> <a href="http://c1.staticflickr.com/1/256/19054155334_bcc082bcc2.jpg" data-gallery title=""> <img src="http://c1.staticflickr.com/1/256/19054155334_bcc082bcc2.jpg" alt=""></a> </div>
+        <div class="land span3"> <a href="http://c1.staticflickr.com/1/440/19571704968_d753e0807d_z.jpg" data-gallery title=""> <img src="hhttp://c1.staticflickr.com/1/440/19571704968_d753e0807d_z.jpg" alt=""></a> </div>
+        <div class="land span3"> <a href="http://c1.staticflickr.com/1/463/19752476062_f3b6571199_z.jpg" data-gallery title=""> <img src="http://c1.staticflickr.com/1/463/19752476062_f3b6571199_z.jpg" alt=""></a> </div>
+        <div class="land span3"> <a href="http://c1.staticflickr.com/1/471/19054152904_3c4b8b3c9b_c.jpg" data-gallery title=""> <img src="http://c1.staticflickr.com/1/471/19054152904_3c4b8b3c9b_c.jpg" alt=""></a> </div>
+        <div class="land span3"> <a href="http://c4.staticflickr.com/4/3833/19137138514_6da40b270e_z.jpg" data-gallery title=""> <img src="http://c4.staticflickr.com/4/3833/19137138514_6da40b270e_z.jpg" alt=""></a> </div>
+        <div class="nangphaya span3"> <a href="htp://c1.staticflickr.com/1/377/19752475922_f5773f5c77.jpg" data-gallery title=""> <img src="tp://c1.staticflickr.com/1/377/19752475922_f5773f5c77.jpg" alt=""></a> </div>
+        <div class="travel col-lg-1 col-md-1 col-sm-3 col-xs-4"> <a href="http://c1.staticflickr.com/1/385/19573125459_5b9dd47d93_z.jpg" data-gallery title=""> <img src="http://c1.staticflickr.com/1/385/19573125459_5b9dd47d93_z.jpg" alt=""></a> </div>
+        <div class="portraits col-lg-4 col-md-4 col-sm-6 col-xs-12"> <a href="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" alt=""></a> </div>
+        <div class="portraits col-lg-4 col-md-4 col-sm-6 col-xs-12"> <a href="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" alt=""></a> </div>
+        <div class="travel col-lg-4 col-md-4 col-sm-6 col-xs-12"> <a href="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" alt=""></a> </div>
+        <div class="travel col-lg-4 col-md-4 col-sm-6 col-xs-12"> <a href="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" alt=""></a> </div>
+        <div class="phrarod col-lg-1 col-md-1 col-sm-3 col-xs-4"> <a href="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" data-gallery title=""> <img src="https://marycasserly.files.wordpress.com/2015/03/beach-ride-133-1.jpg" alt=""></a> </div>
+
+        
     </div>
- 
-    <div class="places objects Landscapes image-responsive span3">
-		<img  src="https://marycasserly.files.wordpress.com/2015/03/dscn4682.jpg"> 
+
+
+    <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false"> 
+      <!-- The container for the modal slides -->
+      <div class="slides"></div>
+      <!-- Controls for the borderless lightbox --> 
+      <a class="prev">‹</a> <a class="next">›</a> <a class="close">×</a> <a class="play-pause"></a>
+      <ol class="indicator">
+      </ol>
+      <!-- The modal dialog, which will be used to wrap the lightbox content -->
+      <div class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <button type="button" class="close" aria-hidden="false">&times;</button>
+            </div>
+            <div class="modal-body next"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default pull-left prev"> <i class="glyphicon glyphicon-chevron-left"></i> Previous </button>  
+              <button type="button" class="btn btn-primary next"> Next <i class="glyphicon glyphicon-chevron-right"></i> </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
- 
-    <div class="people food objects Landscapes image-responsive span3">
-      <img  src="https://marycasserly.files.wordpress.com/2013/01/baybridge.jpg" />
-
-    </div>
- 
-    <div class="food objects Landscapes image-responsive span3">
-       <img  src="https://marycasserly.files.wordpress.com/2015/03/img_3533.jpg"  /> 
-
-    </div>    
-     
-    <div class="food Landscapes image-responsive span3">
-         <img  src="https://marycasserly.files.wordpress.com/2015/02/img_3169.jpg">
-    </div>   
-
- </div>
+  </section>
 
 
-</main>
-
-
-<footer>
+  <footer>
   <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4">
@@ -143,42 +203,31 @@
         </div>
       </div>
     </footer>
- 
 
- 
-<script type="text/javascript">
- $(window).load(function(){
-    var $container = $('.photoContainer');
-    $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
- 
-    $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-         });
-         return false;
-    }); 
-});
- 
+    
 </script>
 
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/jquery.isotope.min.js"></script>
+  <!-- jQuery --> 
+  <script src="js/jquery.js"></script> 
+    
+  <!-- Bootstrap Core JavaScript --> 
+  <script src="js/bootstrap.min.js"></script> 
+  
+  <!-- Plugin JavaScript --> 
+  <script src="js/jquery.easing.min.js"></script> 
+    
+  <!-- Custom JavaScript --> 
+  <script src="js/custom.js"></script> 
+  
+  <!-- Gallery JavaScript --> 
+  <script src="js/isotope.pkgd.min.js"></script> 
+  <script src="js/jquery.isotope.js"></script> 
 
+  <script src="js/jquery.blueimp-gallery.min.js"></script> 
+  <script src="js/bootstrap-image-gallery.min.js"></script> 
+  
+  <!-- Scrollbar JavaScript --> 
+  <script src="js/jquery.nicescroll.min.js"></script> 
+  <script src="js/nicescroll.js"></script> 
 </body>
-</html> 
+</html>

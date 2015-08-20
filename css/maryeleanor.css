@@ -39,7 +39,7 @@ img.logo {
 .navbar-toggle {
 	border: 0;
 	border-radius: 0;
-	padding: 22px 10px 0 0;
+	padding: 10px 10px 0 0;
 }
 
 
@@ -86,9 +86,9 @@ h2 {
 
 h3 {
 	margin: 20px auto;
-	font-weight: 600;
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 h4 {
@@ -97,6 +97,9 @@ h4 {
 	font-size: 16px;
 }
 
+.photoContainer a {
+	cursor: pointer;
+}
 
 
 /* Common element styles */
@@ -436,6 +439,7 @@ footer hr {
 
 /* Small/medium breakpoints only */
 @media (min-width: 768px) and (max-width: 1199px) {
+	
 	.nav > li:last-child > a {
 		padding-right: 0;
 	}
@@ -448,33 +452,32 @@ footer hr {
 	.hero img {
 		left: auto;
 	}
-}
 
 	.span3 {
     width: 50%;
 }
-
+}
 
 /* Small breakpoint only */
 @media (min-width: 768px) and (max-width: 991px) {
-	.hero h2 {
-		font-size: 42px;
+.hero h2 {
+	font-size: 42px;
 	}
-}
+
 .span3 {
     width: 100%;
 }
-
+}
 
 
 
 /* Medium breakpoint only */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-}
 .span3 {
     width: 50%;
   }
+}
 
 
 /* Large breakpoint only */
@@ -507,10 +510,9 @@ footer hr {
 	.hero img {
 		max-height: 600px;
 	}
-}
 
 .span3 {
-    width: 50%;
+    width: 33.3%;
   }
 
 }
@@ -527,9 +529,7 @@ footer hr {
 }
 
 
-img {
-    margin:5px;
-}
+
 
 .isotope-item {
     z-index: 2;
