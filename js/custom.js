@@ -10,15 +10,22 @@ $(function() {
     });
 });
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.photomenu-fixed'
-})
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-      $('.navbar-toggle:visible').click();
+
+var isoOptions = {
+  masonry: {
+    columnWidth: 1
+  }
+};
+
+$( function() {
+  // init isotope
+  var $grid = $('.grid').isotope( isoOptions );
+  
+   $grid.isotope('shuffle');
+    
 });
+
 
 //Isotope
 $(window).load(function(){
@@ -31,6 +38,8 @@ $(window).load(function(){
             queue: false
         }
     });
+
+
  
     $('.portfolio-filter> li>a').click(function(){
         $('.portfolioFilter .current').removeClass('current');
@@ -49,11 +58,3 @@ $(window).load(function(){
     }); 
 });
 
-
-// update columnWidth on window resize
-$(window).smartresize(function(){
-  $container.isotope({
-    // update columnWidth to a percentage of container width
-    masonry: { columnWidth: $container.width() }
-  });
-});
