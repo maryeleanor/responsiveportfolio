@@ -11,7 +11,7 @@ $(function() {
 });
 
 
-
+/*
 var isoOptions = {
   masonry: {
     columnWidth: 1
@@ -25,7 +25,7 @@ $( function() {
    $grid.isotope('shuffle');
     
 });
-
+*/
 
 //Isotope
 $(window).load(function(){
