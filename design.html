@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-  <title>Mary Eleanor | Photography</title>
+  <title>Mary Eleanor | Design</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.css" rel="stylesheet">
@@ -15,8 +15,9 @@
 <!-- Custom CSS -->
 <link href="css/maryeleanor.css" rel="stylesheet">
 <link rel="stylesheet" href="css/blueimp-gallery.min.css">
-<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy|Josefin+Sans' rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css"> -->
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +32,7 @@
   <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a href="index.html"><img src="img/mary-logo.png" alt="Mary Eleanor, Photography and Design" class="logo"></a>
+        <a href="index.html"><img src="img/logo/MaryE_logo.png" alt="Mary Eleanor, Photography and Design" class="logo"></a>
         
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -42,8 +43,8 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a  href="/design.html">Design</a></li>
-          <li><a class="active" href="#">Photography</a></li>
+          <li><a class="active" href="/#">Design</a></li>
+          <li><a href="/photo.html">Photography</a></li>
           <li><a href="/about.html">About</a></li>
         </ul>
       </div>
@@ -65,8 +66,8 @@
                <li><a class="btn active" href="#" data-filter="*"> All </a></li>
                <li><a class="btn" href="#" data-filter=".ux">UX Case Studies</a> </li>
                <li><a class="btn" href="#" data-filter=".visual">Visual Design</a> </li>
-               <li><a class="btn" href="#" data-filter=".icons">Icons</a> </li>
-               <li><a class="btn" href="#" data-filter=".print">Print</a> </li>
+              <li><a class="btn" href="#" data-filter=".mobile">Mobile</a> </li>
+              <li><a class="btn" href="#" data-filter=".print">Print</a> </li>
               </ul>     
           </div>
       </article>
@@ -75,13 +76,58 @@
        
 
     <!-- Gallery  -->
-    <div class="portfolioContainer grid image-responsive">
- 	
-        <div class="ux visual icon print span6">
-          <a href="https://marycasserly.files.wordpress.com/2015/03/birds-with-bridge.jpg" data-gallery> <img data-attachment-id="53" src="https://marycasserly.files.wordpress.com/2015/03/birds-with-bridge.jpg" /> </a> 
+ <div class="portfolioContainer grid image-responsive">
+ 
+      <div class="ux span3">
+          <a href="img/design/robin/robin_smartphones_trans.png" data-gallery> <img src="img/design/robin/robin_smartphones_trans.png" /> </a> 
+        </div> 
+
+
+        <div class="ux visual  span3">
+          <a href="img/design/elamock.png" data-gallery> <img src="img/design/elamock.png" /> </a> 
+        </div>
+      
+
+       <div class="ux visual mobile span3">
+          <a href="img/design/Cookmock1.png" data-gallery> <img src="img/design/Cookmock1.png" /> </a> 
         </div>
 
-    </div>
+
+          <div class="ux visual mobile span3">
+          <a href="img/design/wireframes/CC_savetofavs.png" data-gallery> <img data-attachment-id="53" src="img/design/wireframes/CC_savetofavs.png" /> </a> 
+        </div>
+
+         <div class="visual icon print span3">
+          <a href="img/design/LIR.png" data-gallery> <img src="img/design/LIR.png" /> </a> 
+        </div>
+
+
+         <div class="print visual span3">
+          <a href="img/design/banner04.png"  data-gallery> <img class="image-responsive" src="img/design/banner04.png" /> </a> 
+        </div> 
+
+      <div class="ux mobile span3">
+          <a href="img/design/robin_sketchmock.png" data-gallery> <img src="img/design/robin_sketchmock.png" /> </a> 
+        </div>
+    
+        <div class="ux mobile span3">
+          <a href="img/design/wireframes/CC_ Cookpage.png" data-gallery> <img data-attachment-id="53" src="img/design/wireframes/CC_ Cookpage.png" /> </a> 
+        </div>
+ 
+
+
+        <div class="ux icon span3">
+          <a href="img/design/robin/robin_homeiterations.png" data-gallery> <img src="img/design/robin_homeiterations.png" /> </a> 
+        </div>
+           
+      
+       
+
+        <div class="ux mobile span3">
+          <a href="img/design/cookmock2.png" data-gallery> <img src="img/design/cookmock2.png" /> </a> 
+        </div>
+      
+    
 
 
   <!-- Gallery Modal -->
@@ -110,7 +156,41 @@
       </div>
     </div>
 
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
 </main>
+
+
+
+<!-- Script needed for isotope window load? -->
+<script type="text/javascript">
+    $(document).ready(function(){
+  // Isotope messes up in Chrome because it initiates before everything has loaded
+  // This ensures everything has loaded before applying
+    $(window).load(function() {
+      $("theselector isotope is on").isotope('reLayout');
+         });
+      });
+
+// update columnWidth on window resize
+$(window).smartresize(function(){
+  $container.isotope({
+    // update columnWidth to a percentage of container width
+    masonry: { columnWidth: $container.width() }
+  });
+});
+
+</script> 
+
 
  <footer>
   <div class="container-fluid">
@@ -161,7 +241,7 @@
   <script src="js/isotope.pkgd.min.js"></script> 
   <script src="js/jquery.isotope.js"></script> 
 
-  <script src="js/jquery.blueimp-gallery.min.js"></script> 
+ <script src="js/jquery.blueimp-gallery.min.js"></script> 
   <!-- <script src="js/bootstrap-image-gallery.min.js"></script> 
   
    Scrollbar JavaScript --> 
