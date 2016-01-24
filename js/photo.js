@@ -1,46 +1,10 @@
 
-$(document).ready(function () {
-        $(".navbar-toggle").on("click", function () {
-            $(this).toggleClass("active");
-        });
-    });
-
-
-$( function() {
-  // initialize Masonry
-  var $container = $('#container').masonry();
-  // layout Masonry again after all images have loaded
-  $container.imagesLoaded( function() {
-    $container.masonry();
-  });
-});
-
-
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-
-
-var isoOptions = {
-  masonry: {
-    columnWidth: 1
-  }
-};
-
 
 //Isotope
 $(window).load(function(){
     var $container = $('.portfolioContainer');
     $container.isotope({
-        filter: '*',
+        filter: '.travel',
         animationOptions: {
             duration: 750,
             easing: 'linear',
@@ -49,12 +13,11 @@ $(window).load(function(){
  });
 
 
- 
-    $('.portfolio-filter> li>a').click(function(d){
+$('.portfolio-filter> li>a').click(function(e){
         $('.portfolio-filter> li>a').removeClass('active');
-        $(d.currentTarget).addClass('active');
+        $(e.currentTarget).addClass('active');
         
- 
+
         var selector = $(this).attr('data-filter');
         $container.isotope({
             filter: selector,

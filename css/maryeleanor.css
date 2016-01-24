@@ -17,8 +17,6 @@ body {
 
 .main {
 	padding-top: 1%;
-	padding-left: 10%;
-	padding-right: 10%;
 }
 
 .about {
@@ -123,6 +121,8 @@ margin-top: -12px;
 	border: 3;
 	border-radius: 0;
 	padding: 10px 10px 0 0;
+	margin: 0px;
+	padding-right: 15%;
 }
 
 
@@ -152,6 +152,7 @@ margin-top: -12px;
 .logo {
 	color: #000;
 	text-transform: none;
+	letter-spacing: -.05em;
 	font-size: 40px; 
 }
 
@@ -567,13 +568,14 @@ svg:hover {
 @media (max-width: 767px) {
 
 	.logo {
-		max-width: 180px;
 		margin-top: 5px;
 		text-align: left;
+		font-size: 30px; 
+
 	}
 
   .logo-link {
-		max-width: 180px;
+		max-width: 100px;
 		margin-top: 5px;
 		text-align: left;
 	}
@@ -670,9 +672,8 @@ svg:hover {
 */
 
   .logo-link {
-		max-width: 180px;
+		max-width: 120px;
 		margin-top: 5px;
-		text-align: left;
 	}
 
 	.nav > li > a:focus, .nav > li > a:hover {
@@ -896,12 +897,24 @@ svg:hover {
 /* Small/medium breakpoints only */
 @media (min-width: 768px) and (max-width: 1199px) {
 
+
+.main {
+	padding-top: 1%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+
   .logo-link {
 		max-width: 180px;
 		margin-top: 5px;
-		text-align: left;
 	}
 
+	.navbar-toggle {
+		margin: 0px;
+		padding-right: 15%;
+
+	}
 
 	.navbar {
 		margin-top: 10px;
@@ -923,7 +936,7 @@ svg:hover {
 	}
 
 	.across3 {
-	width: 50%;
+	width: 49%;
 
 	}
 
@@ -948,10 +961,7 @@ svg:hover {
 /* Small breakpoint only */
 @media (min-width: 768px) and (max-width: 991px) {
 
-.logo {
-      max-width: 200px;
-   }
-   
+
 .across3 .span3 .span2 .span6 {
     width: 100%;
 }
@@ -964,15 +974,18 @@ svg:hover {
 @media (min-width: 992px) and (max-width: 1199px) {
 
 
+.main {
+	padding-top: 1%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
    .logo {
-      max-width: 200px;
-      margin-top:2em;
+   		margin-top:2em;
    }
    
      .logo-link {
-		max-width: 180px;
 		margin-top: 5px;
-		text-align: left;
 	}
 
 
@@ -985,7 +998,7 @@ svg:hover {
 	}
 
 	.across3 {
-	    width: 50%;
+	    width: 49%;
 	}
 
 	.across4 {
@@ -999,7 +1012,7 @@ svg:hover {
 	}
 
 	.index {
-		padding-top: 100px;
+		padding-top: 80px;
 	}
 
 }
@@ -1033,8 +1046,15 @@ svg:hover {
 		max-width: 1350px;
 	}*/
 
+
+.main {
+	padding-top: 1%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 	.index {
-		padding: 100px;
+		padding: 80px;
 	}
 
 
