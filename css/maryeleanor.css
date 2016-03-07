@@ -22,7 +22,9 @@ body {
 .about {
 	padding-left: -5%;
 	padding-right: -5%;
+	font-size: 20px;
 }
+
 
 
 img {
@@ -150,10 +152,18 @@ margin-top: -12px;
 }
 
 .logo {
-	color: #000;
+	color: rgba(0, 0, 0, 1);
 	text-transform: none;
-	letter-spacing: -.05em;
+	letter-spacing: -.02em;
 	font-size: 40px; 
+	text-shadow: -3px 4px 5px rgba(233, 0, 157, 0.40); 
+
+}
+
+
+.title {
+	color: #000;
+	letter-spacing: .3em;
 }
 
 /* Headings */
@@ -489,7 +499,7 @@ footer input[type="email"] {
 }
 
 footer .btn,
- footer .btn:hover {
+footer .btn:hover {
 	background: #e9009d;
 	margin-top: 0;
 }
@@ -500,31 +510,45 @@ footer hr {
 }
 
 
-.about svg {
-	fill: #000;
-	height:14px;
-	width: 14px;
+div.insta h3 {
+	color: #e9009d;
 	display: inline;
+	vertical-align: bottom;
 }
+
+
+div.insta svg {
+	fill: #e9009d;
+	display: inline;
+	vertical-align: bottom;
+}
+
 
 svg {
 	fill: #ffffff;
 	height:30px;
 	width: 30px;
 	display: inline;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
 }
 
 svg:hover {
   border-radius: 100%;
   color: #e9009d;
   fill: #e9009d;
-  -webkit-transform: scale(1.25);
-      -ms-transform: scale(1.25);
-          transform: scale(1.25);
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+     -moz-transform: scale(1..5);
+	   -o-transform: scale(1.5);
+	  -ms-transform: scale(1.5);
   -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
           transition: background-color 0.5s, transform 0.5s ease-out;
 }
-
 
  
 .portfolioFilter a { 
@@ -998,7 +1022,7 @@ svg:hover {
 	}
 
 	.across3 {
-	    width: 49%;
+	    width: 491%;
 	}
 
 	.across4 {

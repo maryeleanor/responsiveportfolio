@@ -1,4 +1,64 @@
 
+
+$(document).ready(function(){
+
+/* Button which shows and hides div with a id of "post-details" */
+$( ".toggle-visibility" ).click(function() {
+  
+  var target_selector = $(this).attr('data-target');
+  var $target = $( target_selector );
+  
+  if ($target.is(':hidden'))
+  {
+    $target.show( "slow" );
+  }
+  else
+  {
+    $target.hide( "slow" );
+  }
+  
+  console.log($target.is(':visible'));
+
+  
+});
+  
+/* button which creates a new paragraph <p>New row added</p> */
+$( ".btn-add-new-line" ).click(function() {
+
+  var target_selector = $(this).attr('data-target');
+  var $target = $( target_selector );
+  
+  if ($target.is(':visible'))
+  {
+    var newRow = "New row added";
+    
+  $target.append("<p>" + newRow + "</p>");
+    
+    console.log("row added");
+    
+    var i = $target.text().length;
+    console.log("There is " + i + " characters in div");
+    
+    var p = $target.html().length;
+    console.log("String length of #post-details is: " + p + " ");
+  }
+});
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function () {
         $(".navbar-toggle").on("click", function () {
             $(this).toggleClass("active");
